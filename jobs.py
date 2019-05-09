@@ -1,6 +1,6 @@
 import sys
 import time
-from datetime import datetime
+import datetime
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import NoSuchElementException
@@ -18,7 +18,7 @@ ua = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36',
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
 ]
-now = datetime.now().strftime('%Y%m%d_%H%M%S')
+now = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
 
 # init Options
 options = Options()
